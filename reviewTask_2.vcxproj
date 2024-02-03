@@ -116,6 +116,12 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClCompile Include="C:\KamataEngine\DirectXGame\2d\ImGuiManager.cpp" />
     <ClCompile Include="C:\KamataEngine\Adapter\Novice.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="Scenes\BaseScene.cpp" />
+    <ClCompile Include="Scenes\Title.cpp" />
+    <ClCompile Include="Useful\CursorManager.cpp" />
+    <ClCompile Include="Useful\KeyManager.cpp" />
+    <ClCompile Include="Useful\ResourceManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\KamataEngine\DirectXGame\base\StringUtility.h" />
@@ -145,6 +151,13 @@ xcopy C:\KamataEngine\DirectXGame\Resources "$(OutDirFullPath)NoviceResources" /
     <ClInclude Include="C:\KamataEngine\DirectXGame\input\Input.h" />
     <ClInclude Include="C:\KamataEngine\DirectXGame\scene\GameScene.h" />
     <ClInclude Include="C:\KamataEngine\Adapter\Novice.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="Scenes\BaseScene.h" />
+    <ClInclude Include="Scenes\Title.h" />
+    <ClInclude Include="Useful\CursorManager.h" />
+    <ClInclude Include="Useful\KeyManager.h" />
+    <ClInclude Include="Useful\ResourceManager.h" />
+    <ClInclude Include="Defines.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,11 +3,13 @@
 #include "Useful/CursorManager.h"
 #include "Useful/KeyManager.h"
 #include "Useful/ResourceManager.h"
+#include "Useful/JSON-Loader/JSON-Manager.h"
 
 
 const char kWindowTitle[] = "LC1A_17_ナイトウ_ソウト_タイトル";
 
 void	ResourceRegist();
+void	Load_JSON();
 
 // Windowsアプリでのエントリーポイント(main関数)
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
@@ -21,6 +23,11 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 	// リソース登録
 	ResourceRegist();
+	// JSONファイル読み込み
+	Load_JSON();
+
+	
+	SceneManager::Init();
 
 	// ウィンドウの×ボタンが押されるまでループ
 	while (Novice::ProcessMessage() == 0) {
@@ -69,4 +76,9 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 void	ResourceRegist()
 {
 	ResourceManager::Regist("title", "./Resource/img/title.png");
+}
+
+void Load_JSON()
+{
+	JSON_Manager::LoadJSON("title", "./Resource/data/title.json");
 }

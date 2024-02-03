@@ -1,4 +1,6 @@
 ﻿#include "SceneManager.h"
+#include "Scenes/Title.h"
+#include "Scenes/Game.h"
 
 Scene		SceneManager::scene_current;
 Scene		SceneManager::scene_next;
@@ -10,7 +12,7 @@ void SceneManager::Init()
 	scene_current	= Scene::SC_Title;
 	scene_next		= scene_current;
 	existRequest	= 0;
-	bsInstance		= nullptr;
+	bsInstance		= new Title();
 }
 
 void SceneManager::Update()
@@ -30,10 +32,10 @@ void SceneManager::SceneChange()
 		switch (scene_next)
 		{
 		case SC_Title:
-			//bsInstance = new Title();
+			bsInstance = new Title();
 			break;
 		case SC_Game:
-			//bsInstance = new Game();
+			bsInstance = new Game();
 			break;
 		case SC_Result:
 			//bsInstance = new Result;
@@ -41,6 +43,8 @@ void SceneManager::SceneChange()
 		default:
 			break;
 		}
+
+		existRequest = 0;
 	}
 }
 

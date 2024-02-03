@@ -20,9 +20,6 @@
     <Filter Include="クラス\エフェクト">
       <UniqueIdentifier>{f6e6fc67-67cd-4ab8-9413-572237ac94c7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="クラス\オブジェクト">
-      <UniqueIdentifier>{68edceec-a9b8-439c-9ac1-e8c754378ec5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="クラス\シーン">
       <UniqueIdentifier>{8496e503-c73b-4a39-9464-6edc6d5c6882}</UniqueIdentifier>
     </Filter>
@@ -55,6 +52,21 @@
     </Filter>
     <Filter Include="クラス\システム\Useful\JSON_Loader">
       <UniqueIdentifier>{4af8bb42-14f4-4d15-8efb-179cbb26a648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="クラス\オブジェクト">
+      <UniqueIdentifier>{68edceec-a9b8-439c-9ac1-e8c754378ec5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="クラス\オブジェクト\Player">
+      <UniqueIdentifier>{b90af5a2-7f48-4d79-b41c-f91fb18dce80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="クラス\オブジェクト\Enemy">
+      <UniqueIdentifier>{f3454dcd-2e7f-4a2f-a0b3-631bca8da013}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="クラス\オブジェクト\Bullet">
+      <UniqueIdentifier>{ab79d8a6-7e30-41f5-83e3-89aab46ce200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="クラス\オブジェクト\Base">
+      <UniqueIdentifier>{a90a235a-0c4f-4e81-9b0f-62288109e9e8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +130,18 @@
     </ClCompile>
     <ClCompile Include="Useful\JSON-Loader\JSON-Manager.cpp">
       <Filter>クラス\システム\Useful\JSON_Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>クラス\オブジェクト\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>クラス\オブジェクト\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseObject.cpp">
+      <Filter>クラス\オブジェクト\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Defines.cpp">
+      <Filter>クラス\システム\Define</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -234,6 +258,15 @@
     </ClInclude>
     <ClInclude Include="Useful\JSON-Loader\JSON-Manager.h">
       <Filter>クラス\システム\Useful\JSON_Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>クラス\オブジェクト\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>クラス\オブジェクト\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseObject.h">
+      <Filter>クラス\オブジェクト\Base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

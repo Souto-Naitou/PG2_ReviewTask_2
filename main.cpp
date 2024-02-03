@@ -15,7 +15,7 @@ void	Load_JSON();
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 	// ライブラリの初期化
-	Novice::Initialize(kWindowTitle, 1280, 720);
+	Novice::Initialize(kWindowTitle, SCREEN_WIDTH, SCREEN_HEIGHT);
 
 	// キー入力結果を受け取る箱
 	char keys[256] = {0};
@@ -75,10 +75,13 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 
 void	ResourceRegist()
 {
+	ResourceManager::Regist("white", "white1x1.png");
 	ResourceManager::Regist("title", "./Resource/img/title.png");
 }
 
 void Load_JSON()
 {
 	JSON_Manager::LoadJSON("title", "./Resource/data/title.json");
+	JSON_Manager::LoadJSON("player", "./Resource/data/player.json");
+	JSON_Manager::LoadJSON("bullet", "./Resource/data/bullet.json");
 }

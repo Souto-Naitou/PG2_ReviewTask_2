@@ -32,6 +32,30 @@
     <Filter Include="ヘッダーデフォルト">
       <UniqueIdentifier>{75499ae2-ed4b-4426-b07b-253f1046063c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="クラス\シーン\SceneManager">
+      <UniqueIdentifier>{ef748ce1-45c8-4d23-b39c-b5b937ec1299}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="クラス\シーン\Title">
+      <UniqueIdentifier>{1f00ccf2-c049-4963-934a-d315dfe440af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="クラス\シーン\Base">
+      <UniqueIdentifier>{3b9dc8c0-1437-44ed-b145-7e733123e4b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="クラス\システム\Useful">
+      <UniqueIdentifier>{0dc8950e-5325-427c-a4e2-e6a91f45dcae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="クラス\システム\Define">
+      <UniqueIdentifier>{570d3628-0e92-4a2d-b639-1c517c0fac69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="クラス\シーン\Game">
+      <UniqueIdentifier>{c10e7e86-5f30-4b4c-9300-f51a3cd7eb44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="クラス\システム\Useful\PhilliaFunction">
+      <UniqueIdentifier>{10869b64-aa8f-480f-857e-4c8f14a0c2ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="クラス\システム\Useful\JSON_Loader">
+      <UniqueIdentifier>{4af8bb42-14f4-4d15-8efb-179cbb26a648}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\DirectXCommon.cpp">
@@ -55,6 +79,45 @@
     </ClCompile>
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\StringUtility.cpp">
       <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>クラス\シーン\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\Title.cpp">
+      <Filter>クラス\シーン\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\BaseScene.cpp">
+      <Filter>クラス\シーン\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Useful\CursorManager.cpp">
+      <Filter>クラス\システム\Useful</Filter>
+    </ClCompile>
+    <ClCompile Include="Useful\KeyManager.cpp">
+      <Filter>クラス\システム\Useful</Filter>
+    </ClCompile>
+    <ClCompile Include="Useful\ResourceManager.cpp">
+      <Filter>クラス\システム\Useful</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\Game.cpp">
+      <Filter>クラス\シーン\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Useful\PhilliaFunction\Phill.cpp">
+      <Filter>クラス\システム\Useful\PhilliaFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="Useful\PhilliaFunction\PhillEasing.cpp">
+      <Filter>クラス\システム\Useful\PhilliaFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="Useful\PhilliaFunction\Phill-various.cpp">
+      <Filter>クラス\システム\Useful\PhilliaFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="Useful\PhilliaFunction\TCPIP.cpp">
+      <Filter>クラス\システム\Useful\PhilliaFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="Useful\JSON-Loader\json.cpp">
+      <Filter>クラス\システム\Useful\JSON_Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Useful\JSON-Loader\JSON-Manager.cpp">
+      <Filter>クラス\システム\Useful\JSON_Loader</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +201,39 @@
     </ClInclude>
     <ClInclude Include="C:\KamataEngine\DirectXGame\2d\ImGuiManager.h">
       <Filter>ヘッダーデフォルト</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>クラス\シーン\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Title.h">
+      <Filter>クラス\シーン\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\BaseScene.h">
+      <Filter>クラス\シーン\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Useful\CursorManager.h">
+      <Filter>クラス\システム\Useful</Filter>
+    </ClInclude>
+    <ClInclude Include="Useful\KeyManager.h">
+      <Filter>クラス\システム\Useful</Filter>
+    </ClInclude>
+    <ClInclude Include="Useful\ResourceManager.h">
+      <Filter>クラス\システム\Useful</Filter>
+    </ClInclude>
+    <ClInclude Include="Defines.h">
+      <Filter>クラス\システム\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\Game.h">
+      <Filter>クラス\シーン\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Useful\PhilliaFunction\Phill.h">
+      <Filter>クラス\システム\Useful\PhilliaFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="Useful\JSON-Loader\json.h">
+      <Filter>クラス\システム\Useful\JSON_Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Useful\JSON-Loader\JSON-Manager.h">
+      <Filter>クラス\システム\Useful\JSON_Loader</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

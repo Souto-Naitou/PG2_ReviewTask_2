@@ -6,12 +6,11 @@
 #include <WinSock2.h>
 #include <WS2tcpip.h>
 
-#ifdef _DEBUG
+
 enum DebugMode {
 	kStandardMode, // 通常モード
 	kDebugMode     // デバッグモード
 };
-#endif // _DEBUG
 
 enum PhillDrawMode
 {
@@ -85,9 +84,7 @@ public:
 	static	void	shuffle(int* arr, int len);
 
 private:
-#ifdef _DEBUG
 	static	bool	isDebugMode;
-#endif // _DEBUG
 
 	static	float	LimitConstant(float _constant);
 	static	int		callCnt;

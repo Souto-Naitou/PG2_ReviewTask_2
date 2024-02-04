@@ -76,21 +76,35 @@ Player::Player()
 	bufferFrame		= 0;
 }
 
+Player::~Player()
+{
+	for (int i = 0; i < bullets.size(); i++)
+	{
+		delete bullets[i];
+	}
+	bullets.clear();
+}
+
 void Player::Update()
 {
 	MoveWithKeyboard();
 	Shot();
 	currentFrame++;
 
-	for (BaseObject* obj : bullets)
+	for (int i = 0; i < bullets.size(); i++)
 	{
-		obj->Update();
+		bullets[i]->Update();
+		if (bullets[i]->ableDelete())
+		{
+			delete bullets[i];
+			bullets.erase(bullets.begin() + i);
+		}
 	}
 }
 
 void Player::Draw()
 {
-	for (BaseObject* obj : bullets)
+	for (Bullet* obj : bullets)
 	{
 		obj->Draw();
 	}

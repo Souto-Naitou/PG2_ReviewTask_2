@@ -1,25 +1,22 @@
 ﻿#pragma once
-#include "BaseObject.h"
+#include "Scenes/BaseScene.h"
 #include "Defines.h"
 #include "Useful/JSON-Loader/JSON-Manager.h"
 
-class Bullet : public BaseObject
+class Enemy : public BaseScene
 {
 private:
 	JsonL*		data;
 
-	int			bulletHandle;
-
 	Transform	position;
 	Size		size;
 	int			moveSpeed;
-	int			isAbleDelete;
 
 	void		LoadFromJSON();
 public:
-	Bullet(Transform _pos);
+	Enemy();
 
 	void	Update() override;
 	void	Draw() override;
-	int		ableDelete();
+
 };

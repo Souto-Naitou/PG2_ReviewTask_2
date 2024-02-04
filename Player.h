@@ -9,7 +9,7 @@ class Player : public BaseObject
 {
 private:
 
-	std::vector<BaseObject*> bullets;
+	std::vector<Bullet*> bullets;
 	
 	JsonL*		data;
 	int			playerHandle;
@@ -26,6 +26,7 @@ private:
 	void		Shot();
 public:
 	Player();
+	~Player();
 
 	void	Update() override;
 	void	Draw() override;

@@ -143,6 +143,9 @@
     <ClCompile Include="Defines.cpp">
       <Filter>クラス\システム\Define</Filter>
     </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>クラス\オブジェクト\Enemy</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\KamataEngine\DirectXGame\audio\Audio.h">
@@ -267,6 +270,9 @@
     </ClInclude>
     <ClInclude Include="BaseObject.h">
       <Filter>クラス\オブジェクト\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>クラス\オブジェクト\Enemy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

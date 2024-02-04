@@ -17,11 +17,13 @@ Bullet::Bullet(Transform _pos)
 	LoadFromJSON();
 	position = _pos;
 	bulletHandle = ResourceManager::Handle("white");
+	isAbleDelete = 0;
 }
 
 void Bullet::Update()
 {
 	position.x += moveSpeed;
+	if (position.x > SCREEN_WIDTH) isAbleDelete = 1;
 }
 
 void Bullet::Draw()
@@ -37,4 +39,9 @@ void Bullet::Draw()
 		0xffffffff,
 		DrawMode_Center
 	);
+}
+
+int Bullet::ableDelete()
+{
+	return isAbleDelete;
 }

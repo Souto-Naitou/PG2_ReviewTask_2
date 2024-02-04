@@ -84,4 +84,5 @@ void Load_JSON()
 	JSON_Manager::LoadJSON("title", "./Resource/data/title.json");
 	JSON_Manager::LoadJSON("player", "./Resource/data/player.json");
 	JSON_Manager::LoadJSON("bullet", "./Resource/data/bullet.json");
+	JSON_Manager::LoadJSON("enemy", "./Resource/data/enemy.json");
 }

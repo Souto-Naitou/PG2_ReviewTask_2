@@ -100,6 +100,10 @@ void Player::Update()
 			bullets.erase(bullets.begin() + i);
 		}
 	}
+	if (position.x + size.width / 2 > SCREEN_WIDTH) position.x = SCREEN_WIDTH - size.width / 2;
+	if (position.x - size.width / 2 < 0) position.x = size.width / 2;
+	if (position.y + size.height / 2 > SCREEN_HEIGHT) position.y = SCREEN_HEIGHT - size.height / 2;
+	if (position.y - size.height / 2 < 0) position.y = size.height / 2;
 }
 
 void Player::Draw()

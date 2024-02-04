@@ -19,7 +19,10 @@ private:
 public:
 	Bullet(Transform _pos);
 
-	void	Update() override;
-	void	Draw() override;
-	int		ableDelete();
+	void		Update() override;
+	void		Draw() override;
+
+	Transform	GetPosition() { return position; };
+	Size		GetSize() { return size; };
+	int			ableDelete();
 };

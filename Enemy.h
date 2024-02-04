@@ -8,15 +8,22 @@ class Enemy : public BaseScene
 private:
 	JsonL*		data;
 
+	int			enemyHandle;
+
 	Transform	position;
 	Size		size;
 	int			moveSpeed;
 
+	int			isAbleDelete;
+
 	void		LoadFromJSON();
 public:
-	Enemy();
+	Enemy(Transform _pos);
 
 	void	Update() override;
 	void	Draw() override;
+	int		AbleDelete() { return isAbleDelete; };
 
+	Transform	GetPosition() { return position; };
+	Size		GetSize() { return size; };
 };

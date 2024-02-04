@@ -4,6 +4,7 @@
 #include "Useful/KeyManager.h"
 #include "Useful/ResourceManager.h"
 #include "Useful/JSON-Loader/JSON-Manager.h"
+#include <time.h>
 
 
 const char kWindowTitle[] = "LC1A_17_ナイトウ_ソウト_タイトル";
@@ -26,6 +27,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	// JSONファイル読み込み
 	Load_JSON();
 
+	srand(unsigned int(time(nullptr)));
 	
 	SceneManager::Init();
 

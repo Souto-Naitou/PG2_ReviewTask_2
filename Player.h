@@ -9,6 +9,7 @@ class Player : public BaseObject
 {
 private:
 
+	// 包含？
 	std::vector<Bullet*> bullets;
 	
 	JsonL*		data;
@@ -28,6 +29,10 @@ public:
 	Player();
 	~Player();
 
-	void	Update() override;
-	void	Draw() override;
+	void		Update() override;
+	void		Draw() override;
+
+	Transform	GetPosition() { return position; };
+	Size		GetSize() { return size; };
+	std::vector<Bullet*>* GetBullets() { return &bullets; };
 };

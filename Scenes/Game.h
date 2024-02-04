@@ -1,14 +1,23 @@
 ﻿#pragma once
 #include "BaseScene.h"
-#include "BaseObject.h"
+#include "Player.h"
+#include "Enemy.h"
+#include <vector>
 
 class Game : public BaseScene
 {
 private:
-	BaseObject*		player;
-	BaseObject*		enemy;
+	Player*					player;
+	std::vector<Enemy*>		enemies;
+	std::vector<Bullet*>*	pBullets;
+	Transform				tPlayer;
+	Size					sPlayer;
 
-	int				currentFrame;	// 現在のフレーム数
+	Size					sBullet;
+
+
+	int					deathEnemyCount;	// 死んだ敵数
+	int					currentFrame;		// 現在のフレーム数
 public:
 	Game();
 	~Game();
